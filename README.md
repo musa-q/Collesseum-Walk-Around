@@ -19,7 +19,6 @@ The camera is able to move and be rotated along its local coordinates, using the
     - 'c' to move down
     - 'q' to move up
 
-
     - 'ArrowUp' to rotate to look up
     - 'ArrowDown' to rotate to look down
     - 'ArrowLeft' to rotate to look left
