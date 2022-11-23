@@ -19,6 +19,7 @@ The camera is able to move and be rotated along its local coordinates, using the
     - 'c' to move down
     - 'q' to move up
 
+
     - 'ArrowUp' to rotate to look up
     - 'ArrowDown' to rotate to look down
     - 'ArrowLeft' to rotate to look left
@@ -27,5 +28,6 @@ The camera is able to move and be rotated along its local coordinates, using the
     - '/' to tilt to right
 
 Use the following keys to reset the camera's position:
+
     - '1' to return to inital position
     - 't' to view from an aerial view
