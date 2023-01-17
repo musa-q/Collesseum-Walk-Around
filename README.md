@@ -4,7 +4,7 @@ This project allows you to 'walk' around the Collesseum, by using the camera con
 
 With RenderDoc you can capture mesh from Google Earth and store as a .rdc file. From here, I imported this .rdc file into Blender and removed unwanted mesh and trimmed the map area down, then exported this as a .obj and .mtl file.
 
-To run, simply run the file "Collesseum Walk Around.html" and it should open in a browser, but may take a few moments to load, as textures and 3D models are being loaded.
+To run, simply run the file "index.html" and it should open in a browser, but may take a few moments to load, as textures and 3D models are being loaded.
 <br />
 <br />
 
