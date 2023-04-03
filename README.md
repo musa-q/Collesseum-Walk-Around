@@ -1,6 +1,4 @@
 # Collesseum Walk Around
-[Try it out here](https://mmmoses.github.io/Collesseum-Walk-Around/index.html) 
-<br />
 This project allows you to 'walk' around the Collesseum, by using the camera controls (as stated below) and view from it different perspectives. The project uses WebGL and Three.js to render the scene of the Collesseum. The mesh for the Collessum is extracted from Google Earth, using RenderDoc.
 
 With RenderDoc you can capture mesh from Google Earth and store as a .rdc file. From here, I imported this .rdc file into Blender and removed unwanted mesh and trimmed the map area down, then exported this as a .obj and .mtl file.
