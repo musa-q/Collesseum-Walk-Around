@@ -15,10 +15,38 @@
 			width: 100%;
 			height: 100%;
 		}
+
+		#overlay {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			padding: 10px;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+		}
 	</style>
 </head>
 
 <body>
+	<div id="overlay">
+		<p>Use the following controls:</p>
+		<ul>
+			<li><strong>'w'</strong> to move forwards</li>
+			<li><strong>'s'</strong> to move backwards</li>
+			<li><strong>'a'</strong> to move left</li>
+			<li><strong>'d'</strong> to move right</li>
+			<li><strong>'c'</strong> to move down</li>
+			<li><strong>'q'</strong> to move up</li>
+			<li><strong>'ArrowUp'</strong> to rotate to look up</li>
+			<li><strong>'ArrowDown'</strong> to rotate to look down</li>
+			<li><strong>'ArrowLeft'</strong> to rotate to look left</li>
+			<li><strong>'ArrowRight'</strong> to rotate to look right</li>
+			<li><strong>'.'</strong> to tilt to the left</li>
+			<li><strong>'/'</strong> to tilt to the right</li>
+		</ul>
+	</div>
 	<script src="three-r134.js"></script>
 	<script src="OBJLoader.js"></script>
 	<script src="MTLLoader.js"></script>
@@ -28,7 +56,7 @@
 
 		var camera, scene, renderer, ambientLight, city;
 		let position = new THREE.Vector3()
-   		let direction = new THREE.Vector3()
+		let direction = new THREE.Vector3()
 
 		init();
 		animate();
@@ -48,13 +76,13 @@
 			// The objects are loaded using the OBJLoader and the materials using the MTLLoader
 			var collesseumMtlLoader = new THREE.MTLLoader();
 			var collesseumurl = "COLLESSEUM.mtl";
-			collesseumMtlLoader.load( collesseumurl, function( materials ) {
+			collesseumMtlLoader.load(collesseumurl, function (materials) {
 				materials.preload();
 
 				var objLoader = new THREE.OBJLoader();
-				objLoader.setMaterials( materials );
+				objLoader.setMaterials(materials);
 
-				objLoader.load( 'COLLESSEUM.obj', function ( object ) {
+				objLoader.load('COLLESSEUM.obj', function (object) {
 					object.scale.set(0.5, 0.5, 0.5);
 					object.translateY(3.5);
 					object.position.z += (3);
@@ -112,7 +140,7 @@
 				// To get top view
 				case 't':
 					camera.position.set(3, 6, 5);
-					camera.lookAt(0,-1,0);
+					camera.lookAt(0, -1, 0);
 					break;
 
 				// Movement + rotation of camera
